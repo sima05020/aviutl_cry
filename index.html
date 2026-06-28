@@ -15,9 +15,10 @@
     }
 
     body {
-      background: #0c0c1a;
-      color: #c8d4e8;
-      font-family: 'Segoe UI', 'Meiryo', sans-serif;
+      background: #1e1e1e;
+      color: #ccc;
+      font-family: 'Meiryo', 'Segoe UI', sans-serif;
+      font-size: 12px;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -25,26 +26,24 @@
     }
 
     header {
-      background: linear-gradient(135deg, #111130 0%, #1a1050 100%);
-      padding: 12px 20px;
-      border-bottom: 2px solid #3a6aaa;
+      background: #2a2a2a;
+      padding: 6px 12px;
+      border-bottom: 1px solid #444;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-shrink: 0;
     }
 
     header h1 {
-      font-size: 1.2rem;
-      color: #7dd8ff;
-      text-shadow: 0 0 12px rgba(125, 216, 255, 0.6);
-      letter-spacing: 0.03em;
+      font-size: 13px;
+      color: #ddd;
+      font-weight: normal;
     }
 
     header .subtitle {
-      font-size: 0.75rem;
-      color: #5a80a8;
-      margin-left: 4px;
+      font-size: 11px;
+      color: #777;
     }
 
     main {
@@ -53,11 +52,10 @@
       overflow: hidden;
     }
 
-    /* ===== Sidebar ===== */
     #sidebar {
-      width: 240px;
-      background: #0f0f22;
-      border-right: 1px solid #1e2a3e;
+      width: 220px;
+      background: #252525;
+      border-right: 1px solid #3a3a3a;
       display: flex;
       flex-direction: column;
       overflow-y: auto;
@@ -65,250 +63,224 @@
     }
 
     .section {
-      padding: 12px 14px;
-      border-bottom: 1px solid #1a2030;
+      padding: 8px 10px;
+      border-bottom: 1px solid #333;
     }
 
     .section h3 {
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #5090c0;
-      margin-bottom: 10px;
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 6px;
     }
 
     .row {
       display: flex;
       align-items: center;
-      margin-bottom: 7px;
-      gap: 6px;
+      margin-bottom: 5px;
+      gap: 4px;
     }
 
     .row label {
-      font-size: 0.78rem;
-      color: #8090a8;
-      width: 72px;
+      font-size: 11px;
+      color: #aaa;
+      width: 68px;
       flex-shrink: 0;
     }
 
     .row input[type="range"] {
       flex: 1;
-      accent-color: #7dd8ff;
-      height: 3px;
     }
 
     .row .val {
-      font-size: 0.72rem;
-      color: #7dd8ff;
-      width: 28px;
+      font-size: 11px;
+      color: #ccc;
+      width: 30px;
       text-align: right;
       flex-shrink: 0;
     }
 
     .row input[type="checkbox"] {
-      accent-color: #7dd8ff;
-      width: 14px;
-      height: 14px;
       cursor: pointer;
     }
 
     .row input[type="color"] {
-      width: 32px;
-      height: 22px;
-      border: none;
-      border-radius: 3px;
+      width: 30px;
+      height: 20px;
+      border: 1px solid #555;
       cursor: pointer;
-      background: none;
+      padding: 0;
     }
 
     .type-group {
       display: flex;
-      gap: 4px;
-      margin-bottom: 2px;
+      gap: 2px;
+      margin-bottom: 4px;
     }
 
     .type-btn {
       flex: 1;
-      padding: 5px 4px;
-      font-size: 0.70rem;
-      border: 1px solid #2a3a55;
-      background: #111a2e;
-      color: #7090b0;
-      border-radius: 4px;
+      padding: 3px 2px;
+      font-size: 11px;
+      border: 1px solid #444;
+      background: #2a2a2a;
+      color: #999;
       cursor: pointer;
       text-align: center;
-      transition: all 0.12s;
     }
 
     .type-btn:hover {
-      border-color: #4a80b8;
-      color: #a0c8e8;
+      background: #333;
+      color: #ccc;
     }
 
     .type-btn.active {
-      background: #1a3a6a;
-      border-color: #7dd8ff;
-      color: #7dd8ff;
+      background: #3a3a3a;
+      border-color: #aaa;
+      color: #eee;
     }
 
     .btn {
       display: block;
       width: 100%;
-      padding: 7px 10px;
-      margin-bottom: 5px;
-      border: 1px solid #2a3a55;
-      background: #111a2e;
-      color: #8090a8;
-      border-radius: 5px;
+      padding: 5px 8px;
+      margin-bottom: 4px;
+      border: 1px solid #444;
+      background: #2a2a2a;
+      color: #aaa;
       cursor: pointer;
-      font-size: 0.80rem;
+      font-size: 11px;
       text-align: center;
-      transition: all 0.12s;
+      font-family: inherit;
     }
 
     .btn:hover {
-      border-color: #4a80b8;
-      color: #c0d8f0;
+      background: #333;
+      color: #ddd;
     }
 
     .btn.primary {
-      background: #1a3050;
-      border-color: #4a90d0;
-      color: #7dd8ff;
+      border-color: #666;
+      color: #ddd;
     }
 
     .btn.primary:hover {
-      background: #1e3a60;
-      border-color: #7dd8ff;
+      background: #383838;
     }
 
     .btn:disabled {
-      opacity: 0.35;
+      opacity: 0.4;
       cursor: not-allowed;
     }
 
     .btn.danger {
-      border-color: #5a2a2a;
-      color: #c07070;
+      color: #c08080;
     }
 
     .btn.danger:hover {
-      background: #2a1010;
-      border-color: #c07070;
+      background: #2e1f1f;
     }
 
     #progress-wrap {
       display: none;
-      padding: 10px 14px;
-      background: #0a0a1a;
-      border-bottom: 1px solid #1a2030;
+      padding: 8px 10px;
+      border-bottom: 1px solid #333;
     }
 
     #progress-wrap p {
-      font-size: 0.75rem;
-      color: #7dd8ff;
-      margin-bottom: 5px;
+      font-size: 11px;
+      color: #aaa;
+      margin-bottom: 4px;
     }
 
     .pbar-bg {
-      height: 4px;
-      background: #1a2a3a;
-      border-radius: 2px;
+      height: 3px;
+      background: #333;
       overflow: hidden;
     }
 
     .pbar-fill {
       height: 100%;
-      background: linear-gradient(90deg, #4a90ff, #7dd8ff);
-      border-radius: 2px;
+      background: #aaa;
       transition: width 0.1s;
       width: 0%;
     }
 
     .stat {
-      font-size: 0.70rem;
-      color: #3a5070;
-      padding: 4px 14px 8px;
+      font-size: 10px;
+      color: #555;
+      padding: 4px 10px;
       text-align: center;
     }
 
-    /* ===== Canvas area ===== */
     #canvas-area {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: repeating-conic-gradient(#0e0e1e 0% 25%, #0a0a16 0% 50%) 0 0 / 24px 24px;
+      background: #181818;
       overflow: auto;
-      position: relative;
     }
 
     #upload-zone {
-      border: 2px dashed #2a4a6a;
-      border-radius: 12px;
-      padding: 60px 48px;
+      border: 1px dashed #444;
+      padding: 48px 40px;
       text-align: center;
       cursor: pointer;
-      transition: all 0.2s;
-      max-width: 440px;
+      max-width: 400px;
     }
 
     #upload-zone:hover,
     #upload-zone.drag-over {
-      border-color: #7dd8ff;
-      background: rgba(125, 216, 255, 0.04);
+      border-color: #888;
+      background: #222;
     }
 
     #upload-zone .icon {
-      font-size: 3rem;
-      margin-bottom: 12px;
+      font-size: 2rem;
+      margin-bottom: 10px;
     }
 
     #upload-zone p {
-      color: #5070a0;
-      font-size: 0.88rem;
-      margin-bottom: 8px;
+      color: #777;
+      margin-bottom: 6px;
     }
 
     #upload-zone .btn-upload {
       display: inline-block;
-      padding: 8px 20px;
-      border: 1px solid #3a6090;
-      border-radius: 5px;
-      background: #1a2a44;
-      color: #7dd8ff;
+      padding: 4px 14px;
+      border: 1px solid #555;
+      background: #2a2a2a;
+      color: #aaa;
       cursor: pointer;
-      font-size: 0.85rem;
       margin-top: 4px;
     }
 
     #upload-zone .btn-upload:hover {
-      background: #1e3454;
-      border-color: #7dd8ff;
+      background: #333;
+      color: #ccc;
     }
 
     #canvas-wrapper {
       display: none;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
     }
 
     #preview-canvas {
       display: block;
       cursor: crosshair;
-      border: 1px solid #2a3a55;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      border: 1px solid #444;
     }
 
     #canvas-hint {
-      font-size: 0.72rem;
-      color: #3a5070;
+      font-size: 11px;
+      color: #555;
     }
 
     #canvas-hint span {
-      color: #5a8ab0;
+      color: #777;
     }
 
     #file-input {
@@ -320,10 +292,6 @@
 <body>
 
   <header>
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-      <circle cx="11" cy="8" r="6" fill="#4a90d0" opacity="0.8" />
-      <ellipse cx="11" cy="17" rx="3" ry="5" fill="#7dd8ff" opacity="0.7" />
-    </svg>
     <h1>AviUtl泣きメーカー</h1>
     <span class="subtitle">AviUtl Naki</span>
   </header>
@@ -481,7 +449,6 @@
 
     <section id="canvas-area">
       <div id="upload-zone">
-        <div class="icon">💧</div>
         <p>画像をここにドロップ</p>
         <p>または</p>
         <label class="btn-upload">ファイルを選択
